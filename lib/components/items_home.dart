@@ -3,8 +3,8 @@ import 'package:learning_japanese/models/items_model.dart';
 
 class CategoryHome extends StatelessWidget {
 
-  CategoryHome({required this.homeCls});
-  HomeClass homeCls;
+const  CategoryHome({Key? key, required this.homeCls}) : super(key: key);
+ final HomeClass homeCls;
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +16,14 @@ class CategoryHome extends StatelessWidget {
         );
       },
       child: Container(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20),
         alignment: Alignment.centerLeft,
         width: double.infinity,
         height: 100,
         color: homeCls.color,
         child: Text(
           homeCls.name,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 24,
           ),

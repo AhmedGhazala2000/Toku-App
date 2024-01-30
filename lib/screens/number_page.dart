@@ -3,9 +3,9 @@ import 'package:learning_japanese/components/items_category.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class NumbersP extends StatelessWidget {
-  NumbersP({Key? key}) : super(key: key);
+  const NumbersP({Key? key}) : super(key: key);
 
-  List<ItemsClass> numbers = [
+  final List<ItemsClass> numbers = const [
     ItemsClass(
         image: 'assets/images/numbers/number_one.png',
         JName: 'Ichi',
@@ -61,10 +61,11 @@ class NumbersP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF09234),
+      backgroundColor: const Color(0xffF09234),
       appBar: AppBar(
-        backgroundColor: Color(0xFF47312B),
-        title: Text('Numbers',
+        backgroundColor: const Color(0xFF47312B),
+        title: const Text(
+          'Numbers',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,

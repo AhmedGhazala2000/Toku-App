@@ -2,29 +2,31 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class ItemsClass {
-  String? image;
-  String  JName;
-  String  EName;
-  String  sound;
+  final String? image;
+  final String JName;
+  final String EName;
+  final String sound;
 
-  ItemsClass({
+  const ItemsClass({
     this.image,
     required this.JName,
     required this.EName,
     required this.sound,
   });
 
-  playSound(){
+  playSound() {
     final player = AudioPlayer();
     player.play(
       AssetSource(sound),
     );
   }
-}   //Model for category
+} //Model for category
 
-class HomeClass{
-  String name;
-  Color color;
-  dynamic pageRoute;
-  HomeClass({required this.name, required this.color, required this.pageRoute});
-}     //Model for homePage
+class HomeClass {
+  final String name;
+  final Color color;
+  final dynamic pageRoute;
+
+  const HomeClass(
+      {required this.name, required this.color, required this.pageRoute});
+} //Model for homePage

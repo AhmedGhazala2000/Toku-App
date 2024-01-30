@@ -3,9 +3,9 @@ import 'package:learning_japanese/components/items_info.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class PhrasesP extends StatelessWidget {
-  PhrasesP({Key? key}) : super(key: key);
+  const PhrasesP({Key? key}) : super(key: key);
 
-  List<ItemsClass> phrases = [
+  final List<ItemsClass> phrases = const [
     ItemsClass(
         JName: 'anata no namae wa nani desu ka',
         EName: 'what is your name',
@@ -47,10 +47,11 @@ class PhrasesP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF5AB7D3),
+      backgroundColor: const Color(0xFF5AB7D3),
       appBar: AppBar(
-        backgroundColor: Color(0xFF47312B),
-        title: Text('Phrases',
+        backgroundColor: const Color(0xFF47312B),
+        title: const Text(
+          'Phrases',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,

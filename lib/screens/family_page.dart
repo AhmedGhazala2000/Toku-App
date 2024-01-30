@@ -3,9 +3,9 @@ import 'package:learning_japanese/components/items_category.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class FamilyP extends StatelessWidget {
-  FamilyP({Key? key}) : super(key: key);
+  const FamilyP({Key? key}) : super(key: key);
 
-  List<ItemsClass> family = [
+  final List<ItemsClass> family = const [
     ItemsClass(
         image: 'assets/images/family_members/family_father.png',
         JName: 'Chichioya',
@@ -61,10 +61,11 @@ class FamilyP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF609541),
+      backgroundColor: const Color(0xFF609541),
       appBar: AppBar(
-        backgroundColor: Color(0xFF47312B),
-        title: Text('Family Members',
+        backgroundColor: const Color(0xFF47312B),
+        title: const Text(
+          'Family Members',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,

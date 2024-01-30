@@ -7,7 +7,7 @@ import 'package:learning_japanese/screens/number_page.dart';
 import 'package:learning_japanese/screens/phrases_page.dart';
 
 class HomePage extends StatelessWidget {
-  List<HomeClass> homeList = [
+ final List<HomeClass> homeList = const[
     HomeClass(
       name: 'Numbers',
       color: Color(0xffF09136),
@@ -30,12 +30,14 @@ class HomePage extends StatelessWidget {
     ),
   ];
 
+ const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF47312B),
-        title: Text(
+        backgroundColor:   const Color(0xFF47312B),
+        title: const Text(
           'Toku',
           style: TextStyle(
             color: Colors.white,
@@ -43,7 +45,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Color(0xFFFEF5DA),
+      backgroundColor: const Color(0xFFFEF5DA),
       body: ListView.builder(
         itemCount: homeList.length,
         itemBuilder: (context, index) {

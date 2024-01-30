@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class ItemInfo extends StatelessWidget {
-  ItemInfo({required this.item});
-  ItemsClass item;
+const  ItemInfo({Key? key, required this.item}) : super(key: key);
+ final ItemsClass item;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,24 +18,24 @@ class ItemInfo extends StatelessWidget {
               children: [
                 Text(
                   'Jp: ${item.JName}',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 Text(
                   'En: ${item.EName}',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ],
             ),
           ),
-          Spacer(
+          const Spacer(
             flex: 1,
           ),
           IconButton(
-            padding: EdgeInsets.only(right: 10),
+            padding: const EdgeInsets.only(right: 10),
             onPressed: () {
               item.playSound();
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.play_arrow_sharp,
               color: Colors.white,
             ),
