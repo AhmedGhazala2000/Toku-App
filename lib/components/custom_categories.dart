@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/models/items_model.dart';
+import 'package:learning_japanese/models/category_model.dart';
 
 class Category extends StatelessWidget {
   const Category({Key? key, required this.category}) : super(key: key);

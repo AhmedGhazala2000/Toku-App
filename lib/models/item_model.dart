@@ -1,5 +1,4 @@
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/material.dart';
 
 class ItemModel {
   final String? image;
@@ -21,12 +20,3 @@ class ItemModel {
     );
   }
 } //Model for category
-
-class CategoryModel {
-  final String name;
-  final Color color;
-  final dynamic pageRoute;
-
-  const CategoryModel(
-      {required this.name, required this.color, required this.pageRoute});
-} //Model for homePage

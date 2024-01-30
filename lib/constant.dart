@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/models/items_model.dart';
+import 'package:learning_japanese/models/category_model.dart';
+import 'package:learning_japanese/models/item_model.dart';
 import 'package:learning_japanese/views/colors_view.dart';
 import 'package:learning_japanese/views/family_view.dart';
 import 'package:learning_japanese/views/number_view.dart';

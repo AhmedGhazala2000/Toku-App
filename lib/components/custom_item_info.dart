@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/models/items_model.dart';
+import 'package:learning_japanese/models/item_model.dart';
 
 class ItemInfo extends StatelessWidget {
   const ItemInfo({Key? key, required this.item}) : super(key: key);
