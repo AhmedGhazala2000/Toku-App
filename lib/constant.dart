@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/models/items_model.dart';
-import 'package:learning_japanese/views/colors_page.dart';
-import 'package:learning_japanese/views/family_page.dart';
-import 'package:learning_japanese/views/number_page.dart';
-import 'package:learning_japanese/views/phrases_page.dart';
+import 'package:learning_japanese/views/colors_view.dart';
+import 'package:learning_japanese/views/family_view.dart';
+import 'package:learning_japanese/views/number_view.dart';
+import 'package:learning_japanese/views/phrases_view.dart';
 
 const List<CategoryModel> categories = [
   CategoryModel(

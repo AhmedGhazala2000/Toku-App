@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/components/custom_app_bar.dart';
-import 'package:learning_japanese/components/items_home.dart';
+import 'package:learning_japanese/components/custom_categories.dart';
 import 'package:learning_japanese/constant.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
       body: ListView.builder(
         itemCount: categories.length,
         itemBuilder: (context, index) {
-          return CategoryHome(homeCls: categories[index]);
+          return Category(category: categories[index]);
         },
       ),
     );

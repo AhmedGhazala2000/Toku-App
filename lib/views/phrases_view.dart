@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/components/custom_app_bar.dart';
-import 'package:learning_japanese/components/items_info.dart';
+import 'package:learning_japanese/components/custom_item_info.dart';
 import 'package:learning_japanese/constant.dart';
 
 class PhrasesView extends StatelessWidget {

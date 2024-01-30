@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/views/home_page.dart';
+import 'package:learning_japanese/views/home_view.dart';
 
 void main() {
   runApp(const MyApp());

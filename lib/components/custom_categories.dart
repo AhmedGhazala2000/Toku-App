@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
-class CategoryHome extends StatelessWidget {
-  const CategoryHome({Key? key, required this.homeCls}) : super(key: key);
-  final CategoryModel homeCls;
+class Category extends StatelessWidget {
+  const Category({Key? key, required this.category}) : super(key: key);
+  final CategoryModel category;
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class CategoryHome extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => homeCls.pageRoute),
+          MaterialPageRoute(builder: (context) => category.pageRoute),
         );
       },
       child: Container(
@@ -19,9 +19,9 @@ class CategoryHome extends StatelessWidget {
         alignment: Alignment.centerLeft,
         width: double.infinity,
         height: 100,
-        color: homeCls.color,
+        color: category.color,
         child: Text(
-          homeCls.name,
+          category.name,
           style: const TextStyle(
             color: Colors.white,
             fontSize: 24,

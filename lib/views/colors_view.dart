@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/components/custom_app_bar.dart';
-import 'package:learning_japanese/components/items_category.dart';
+import 'package:learning_japanese/components/custom_items.dart';
 import 'package:learning_japanese/constant.dart';
 
 class ColorsView extends StatelessWidget {
