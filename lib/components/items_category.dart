@@ -3,8 +3,9 @@ import 'package:learning_japanese/components/items_info.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class Items extends StatelessWidget {
- const Items({Key? key, required this.item}) : super(key: key);
- final ItemsClass item;
+  const Items({Key? key, required this.item}) : super(key: key);
+  final ItemModel item;
+
   @override
   Widget build(BuildContext context) {
     return Container(

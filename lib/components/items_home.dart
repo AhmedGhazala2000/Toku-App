@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
 class CategoryHome extends StatelessWidget {
-
-const  CategoryHome({Key? key, required this.homeCls}) : super(key: key);
- final HomeClass homeCls;
+  const CategoryHome({Key? key, required this.homeCls}) : super(key: key);
+  final CategoryModel homeCls;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => homeCls.pageRoute),

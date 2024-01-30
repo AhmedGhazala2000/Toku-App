@@ -1,16 +1,16 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-class ItemsClass {
+class ItemModel {
   final String? image;
-  final String JName;
-  final String EName;
+  final String jName;
+  final String eName;
   final String sound;
 
-  const ItemsClass({
+  const ItemModel({
     this.image,
-    required this.JName,
-    required this.EName,
+    required this.jName,
+    required this.eName,
     required this.sound,
   });
 
@@ -22,11 +22,11 @@ class ItemsClass {
   }
 } //Model for category
 
-class HomeClass {
+class CategoryModel {
   final String name;
   final Color color;
   final dynamic pageRoute;
 
-  const HomeClass(
+  const CategoryModel(
       {required this.name, required this.color, required this.pageRoute});
 } //Model for homePage
