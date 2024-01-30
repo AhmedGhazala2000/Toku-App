@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_japanese/components/custom_app_bar.dart';
 import 'package:learning_japanese/components/items_home.dart';
 import 'package:learning_japanese/models/items_model.dart';
 import 'package:learning_japanese/screens/colors_page.dart';
@@ -35,16 +36,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor:   const Color(0xFF47312B),
-        title: const Text(
-          'Toku',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 26,
-          ),
-        ),
-      ),
+      appBar: customAppBar(text: 'Toku'),
       backgroundColor: const Color(0xFFFEF5DA),
       body: ListView.builder(
         itemCount: homeList.length,

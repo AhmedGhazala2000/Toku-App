@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_japanese/components/custom_app_bar.dart';
 import 'package:learning_japanese/components/items_info.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
@@ -48,16 +49,7 @@ class PhrasesP extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF5AB7D3),
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF47312B),
-        title: const Text(
-          'Phrases',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24,
-          ),
-        ),
-      ),
+      appBar: customAppBar(text: 'Phrases'),
       body: ListView.builder(
           itemCount: phrases.length,
           itemBuilder: (context, index) {

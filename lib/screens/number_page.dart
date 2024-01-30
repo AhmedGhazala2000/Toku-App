@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_japanese/components/custom_app_bar.dart';
 import 'package:learning_japanese/components/items_category.dart';
 import 'package:learning_japanese/models/items_model.dart';
 
@@ -62,16 +63,7 @@ class NumbersP extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffF09234),
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF47312B),
-        title: const Text(
-          'Numbers',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24,
-          ),
-        ),
-      ),
+      appBar: customAppBar(text: 'Numbers'),
       body: ListView.builder(
           itemCount: numbers.length,
           itemBuilder: (context, index) {
@@ -79,4 +71,5 @@ class NumbersP extends StatelessWidget {
           }),
     );
   }
+
 }
