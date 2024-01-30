@@ -3,7 +3,7 @@ import 'package:learning_japanese/models/category_model.dart';
 import 'package:learning_japanese/models/item_model.dart';
 import 'package:learning_japanese/views/colors_view.dart';
 import 'package:learning_japanese/views/family_view.dart';
-import 'package:learning_japanese/views/number_view.dart';
+import 'package:learning_japanese/views/numbers_view.dart';
 import 'package:learning_japanese/views/phrases_view.dart';
 
 const List<CategoryModel> categories = [

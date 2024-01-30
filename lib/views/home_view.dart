@@ -9,8 +9,8 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(text: 'Toku'),
       backgroundColor: const Color(0xFFFEF5DA),
+      appBar: customAppBar(text: 'Toku'),
       body: ListView.builder(
         itemCount: categories.length,
         itemBuilder: (context, index) {
