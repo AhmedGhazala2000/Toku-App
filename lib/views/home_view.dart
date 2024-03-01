@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/components/custom_app_bar.dart';
-import 'package:learning_japanese/components/custom_categories.dart';
-import 'package:learning_japanese/constant.dart';
+import 'package:learning_japanese/widgets/custom_app_bar.dart';
+import 'package:learning_japanese/widgets/large_device/large_device_home.dart';
+import 'package:learning_japanese/widgets/small_device/small_device_home.dart';
+import 'package:learning_japanese/utils/adaptive_layout.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -10,12 +11,10 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFEF5DA),
-      appBar: customAppBar(text: 'Toku'),
-      body: ListView.builder(
-        itemCount: categories.length,
-        itemBuilder: (context, index) {
-          return Category(category: categories[index]);
-        },
+      appBar: customAppBar(context, text: 'Toku'),
+      body: AdaptiveLayout(
+        smallDevices: (BuildContext context) => const SmallDeviceHome(),
+        largeDevices: (BuildContext context) => const LargeDeviceHome(),
       ),
     );
   }

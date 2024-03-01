@@ -1,19 +1,27 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_japanese/views/home_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: false,
+      builder: (context) => const LearnJapanese(), // Wrap your app
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class LearnJapanese extends StatelessWidget {
+  const LearnJapanese({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      home: const HomeView(),
     );
   }
 }

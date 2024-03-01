@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_japanese/components/custom_item_info.dart';
+import 'package:learning_japanese/widgets/custom_item_info.dart';
 import 'package:learning_japanese/models/item_model.dart';
 
 class Items extends StatelessWidget {
@@ -8,7 +8,7 @@ class Items extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
         children: [

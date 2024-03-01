@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learning_japanese/constant.dart';
 import 'package:learning_japanese/models/category_model.dart';
+import 'package:learning_japanese/utils/responsive_font_size.dart';
 
 class Category extends StatelessWidget {
   const Category({Key? key, required this.category}) : super(key: key);
@@ -16,15 +18,16 @@ class Category extends StatelessWidget {
       },
       child: Container(
         padding: const EdgeInsets.only(left: 20),
-        alignment: Alignment.centerLeft,
-        width: double.infinity,
-        height: 100,
+        alignment: MediaQuery.sizeOf(context).width < smallDeviceSize
+            ? Alignment.centerLeft
+            : Alignment.center,
+        width: MediaQuery.sizeOf(context).width,
         color: category.color,
         child: Text(
           category.name,
-          style: const TextStyle(
+          style: TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: getResponsiveFontSize(context, fontSize: 24),
           ),
         ),
       ),

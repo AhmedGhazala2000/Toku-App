@@ -6,6 +6,8 @@ import 'package:learning_japanese/views/family_view.dart';
 import 'package:learning_japanese/views/numbers_view.dart';
 import 'package:learning_japanese/views/phrases_view.dart';
 
+const double smallDeviceSize = 900;
+
 const List<CategoryModel> categories = [
   CategoryModel(
     name: 'Numbers',
@@ -13,7 +15,7 @@ const List<CategoryModel> categories = [
     pageRoute: NumbersView(),
   ),
   CategoryModel(
-    name: 'familyMembers',
+    name: 'Family Members',
     color: Color(0xFF609541),
     pageRoute: FamilyView(),
   ),
@@ -212,7 +214,7 @@ const List<ItemModel> phrases = [
       eName: 'how are you feeling',
       sound: 'sounds/phrases/how_are_you_feeling.wav'),
   ItemModel(
-      jName: 'koudoku suru koto wasure nai kudasai',
+      jName: 'Kōdoku suru koto o wasurenaide kudasai',
       eName: "don't forget to subscribe",
       sound: 'sounds/phrases/dont_forget_to_subscribe.wav'),
 ];
